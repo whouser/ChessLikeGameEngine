@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace ChessLikeGameEngine.Core
 {
-    public abstract class Figure
+    public struct AttackDescriptor
     {
-        public IMoveRule MoveRule { get; set; }
+        public Position AttackedPosition;
+
+        public Position MovedPosition;
     }
 }

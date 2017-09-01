@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChessLikeGameEngine.Core
 {
-    public class Board
+    public interface IRule
     {
     }
 }

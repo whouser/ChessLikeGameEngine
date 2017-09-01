@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using QuickGraph;
 
 namespace ChessLikeGameEngine.Core
 {
-    public abstract class Figure
+    public abstract class Field : AdjacencyGraph<Position, Link>
     {
-        public IMoveRule MoveRule { get; set; }
+
     }
 }

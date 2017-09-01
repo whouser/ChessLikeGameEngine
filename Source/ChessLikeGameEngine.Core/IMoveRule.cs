@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ChessLikeGameEngine.Core
 {
-    public abstract class Figure
+    public interface IMoveRule : IRule
     {
-        public IMoveRule MoveRule { get; set; }
+
     }
 }

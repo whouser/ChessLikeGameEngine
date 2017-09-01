@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace ChessLikeGameEngine.Core
 {
-    public abstract class Figure
+    public class Position
     {
-        public IMoveRule MoveRule { get; set; }
+        public Figure Figure;
+
+        public IDictionary<int, Position> Neighbours;
     }
 }
